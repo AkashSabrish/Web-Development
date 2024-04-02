@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+</head>
+<body>
+    <script>
+        // Retrieve the username and password from the URL parameters
+        var urlParams = new URLSearchParams(window.location.search);
+        var username = urlParams.get('username');
+        var password = urlParams.get('password');
+
+        // Display the username and password on the page
+        document.write("<p>Username: " + username + "</p>");
+        document.write("<p>Password: " + password + "</p>");
+    </script>
+</body>
+</html>
